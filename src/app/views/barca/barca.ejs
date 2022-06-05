@@ -92,24 +92,32 @@
       
 
         <div class="row">
-            <div class="col-md-6 mt-4 text-center">
+            <div class="col-md-6 mt-4 text-center" style="max-height: 350px; overflow-y: scroll; padding-right: 0 !important;">
                 <table class="table table-striped">
-                    <tr>
+                    <thead style="position: sticky;
+                    top: 0;
+                    background-color: #282828;
+                    color: white;">
+                      <tr>
                         <th>ID</th>
                         <th>NOMBRE</th>
                         <th>APELLIDOS</th>
-                    </tr>
-                    <% for(var i = 0; i < news.length; i++) { %>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <% for(var i = 0; i < news.length; i++) { %>
                         <tr>
                             <td><%= news[i].id_reserva %></td>
                             <td><%= news[i].nombreUsuario %></td>
                             <td><%= news[i].apellidoUsuario %></td>
                         </tr>
-                    <% } %>
+                      <% } %>
+                    </tbody>
+                    
                 </table>
             </div>
 
-            <div class="col-md-6 mt-4 card">
+            <div class="col-md-6 mt-4 card" style="border: none !important;">
                 <form action="/barca2" method="post" class="card-body">
                     <h3 class="card-title">Añade una reserva</h3>
                     <div class="form-label">
