@@ -31,4 +31,16 @@ module.exports = app => {
             res.redirect('/barca')
         });
     });
+
+    app.get('/covid', (req, res) => {
+
+        res.render('barca/covid');
+
+    });
+
+    app.get('/cancel', (req, res) => {
+        
+        res.render('barca/cancel');
+
+    });
 }

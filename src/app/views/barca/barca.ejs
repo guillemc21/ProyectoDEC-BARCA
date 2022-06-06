@@ -87,7 +87,7 @@
                   Atención al cliente
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                  <li><a class="dropdown-item" href="#">Cancelar reserva</a></li>
+                  <li><a class="dropdown-item" href="/cancel">Cancelar reserva</a></li>
                   <li><a class="dropdown-item" href="/covid">Documentación COVID-19</a></li>
                 </ul>
               </div>
@@ -134,12 +134,15 @@
       
 
         <div class="row">
-            <div class="col-md-6 mt-4 text-center" style="max-height: 350px; overflow-y: scroll; padding-right: 0 !important;">
+            <div class="col-md-6 mt-4 text-center" style="max-height: 385px; overflow-y: scroll; padding-right: 0 !important;">
                 <table class="table table-striped">
                     <thead style="position: sticky;
                     top: 0;
                     background-color: #282828;
                     color: white;">
+                      <tr>
+                        <th colspan="3">RESERVAS ACTIVAS</th>
+                      </tr>
                       <tr>
                         <th>ID</th>
                         <th>NOMBRE</th>
@@ -159,7 +162,7 @@
                 </table>
             </div>
 
-            <div class="col-md-6 mt-4 card" style="border: none !important;">
+            <div class="col-md-6 mt-4 card">
                 <form action="/barca2" method="post" class="card-body">
                     <h3 class="card-title">Añade una reserva</h3>
                     <div class="form-label">
@@ -175,9 +178,12 @@
                       <input type="tel" name="telefono" class="form-control" placeholder="Telefono">
                     </div>
                     <div class="form-label">
+                      <input type="text" name="ruta" class="form-control" placeholder="Ruta">
+                    </div>
+                    <div class="form-label">
                       <input type="date" name="fecha" class="form-control" placeholder="Fecha de reserva">
                     </div>
-                    <input type="submit" class="btn btn-primary">
+                    <input type="submit" value="Enviar" class="btn btn-primary">
                 </form>
             </div>
 
