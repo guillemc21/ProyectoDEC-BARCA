@@ -98,46 +98,14 @@
     <main class="main">
       <section class="py-5 text-center container">
       
+        <div class="container">
 
-        <div class="row">
-            <div class="col-md-6 mt-4 text-center" style="max-height: 350px; overflow-y: scroll; padding-right: 0 !important;">
-                <table class="table table-striped">
-                    <thead style="position: sticky;
-                    top: 0;
-                    background-color: #282828;
-                    color: white;">
-                      <tr>
-                        <th>ID</th>
-                        <th>NOMBRE</th>
-                        <th>APELLIDOS</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <% for(var i = 0; i < news.length; i++) { %>
-                        <tr>
-                            <td><%= news[i].id_reserva %></td>
-                            <td><%= news[i].nombreUsuario %></td>
-                            <td><%= news[i].apellidoUsuario %></td>
-                        </tr>
-                      <% } %>
-                    </tbody>
-                    
-                </table>
-            </div>
+            <h1 class="fw-light">Requisitos para viajar (COVID-19)</h1>
+            
+            
+            <p class="lead text-muted">Asegúrate de revisar a continuación toda la información sobre documentación, vacunas y/o test requeridos para volar a tu destino. Cada pasajero es responsable de cumplir los requisitos necesarios para viajar.</p>
 
-            <div class="col-md-6 mt-4 card" style="border: none !important;">
-                <form action="/barca2" method="post" class="card-body">
-                    <h3 class="card-title">Añade una reserva</h3>
-                    <div class="form-label">
-                        <input id="nom" type="text" name="nombre" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="form-label">
-                        <input type="text" name="apellido" class="form-control" placeholder="Apellido">
-                    </div>
-                    <input type="submit" class="btn btn-primary">
-                </form>
-            </div>
-
+            <p class="lead text-muted">Además de los requisitos de entrada especiales de cada destino, no olvides consultar la documentación personal que necesitas para viajar (DNI, visados, etc).</p>
         </div>
 
       </section>
@@ -197,8 +165,6 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script>
-        document.getElementById('nom').focus();
-    </script>
+    
 </body>
 </html>
