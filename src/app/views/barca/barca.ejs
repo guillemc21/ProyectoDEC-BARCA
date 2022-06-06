@@ -12,6 +12,14 @@
       href="https://getbootstrap.com/docs/5.1/examples/album/"
     />
 
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
     <!-- CSS only -->
     <style>
       body {
@@ -24,15 +32,29 @@
         position: absolute;
         width: 100%;
       }
-    </style>
 
-    <!-- Bootstrap core CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+      #asiento1 input:checked ~ .checkmark {
+        transform: scale(1.5);
+        background-color: green;
+      }
+
+      #barcaESCALA{
+        /* background-color: red; */
+        width: 607px;
+        margin: 0 auto;
+        transform: scale(1.3);
+        /* position: absolute; */
+        margin-top: 85px;
+        margin-bottom: 300px;
+      }
+
+      .formulario_reyenar {
+        width: 403px;
+        margin: 0 auto;
+        text-align-last: center;
+        margin-top: 62px;
+      }
+    </style>
 
     <!-- JavaScript Bundle with Popper -->
     <script
@@ -153,6 +175,262 @@
         </div>
 
       </section>
+      
+      <div class="col">
+        <div class="card shadow-sm">
+         
+          <div class="formulario_reyenar">
+            <form>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlInput1">Nombre</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlInput1">Apellido</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellidos"
+                  placeholder="Apellido"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlInput1">Correo</label> -->
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Correo"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlInput1">Telefono</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="Telefono"
+                />
+              </div>
+              <div class="form-group">
+                <!-- <label for="exampleFormControlTextarea1">Comentarios</label> -->
+                <input
+                  type="date"
+                  class="form-control"
+                  id="fecha"
+                  placeholder="Fecha"
+                ></input>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="reservar()">Reservar</button>
+            
+          </div>
+          <div id="barcaESCALA" style="position: relative" class="card-body">
+            <img src="/barca_mapa.gif" />
+            
+              <input
+                id="asiento1"
+                style="position: absolute; top: 42%; left: 64px"
+                type="checkbox"
+                value="1"
+              />
+              <input
+                id="asiento2"
+                style="position: absolute; top: 53.5%; left: 64px"
+                type="checkbox"
+                value="2"
+              />
+              <input
+                id="asiento3"
+                style="position: absolute; top: 66%; left: 64px"
+                type="checkbox"
+                value="3"
+              />
+
+              <input
+                id="asiento4"
+                style="position: absolute; top: 25%; left: 121px"
+                type="checkbox"
+                value="4"
+              />
+              <input
+                id="asiento5"
+                style="position: absolute; top: 34%; left: 121px"
+                type="checkbox"
+                value="5"
+              />
+              <input
+                id="asiento6"
+                style="position: absolute; top: 58%; left: 121px"
+                type="checkbox"
+                value="6"
+              />
+              <input
+                id="asiento7"
+                style="position: absolute; top: 67%; left: 121px"
+                type="checkbox"
+                value="7"
+              />
+
+              <input
+                id="asiento8"
+                style="position: absolute; top: 25%; left: 141px"
+                type="checkbox"
+                value="8"
+              />
+              <input
+                id="asiento9"
+                style="position: absolute; top: 34%; left: 141px"
+                type="checkbox"
+                value="9"
+              />
+              <input
+                id="asiento10"
+                style="position: absolute; top: 58%; left: 141px"
+                type="checkbox"
+                value="10"
+              />
+              <input
+                id="asiento11"
+                style="position: absolute; top: 67%; left: 141px"
+                type="checkbox"
+                value="11"
+              />
+
+              <input
+                id="asiento12"
+                style="position: absolute; top: 25%; left: 186px"
+                type="checkbox"
+                value="12"
+              />
+              <input
+                id="asiento13"
+                style="position: absolute; top: 34%; left: 186px"
+                type="checkbox"
+                value="13"
+              />
+              <input
+                id="asiento14"
+                style="position: absolute; top: 58%; left: 186px"
+                type="checkbox"
+                value="14"
+              />
+              <input
+                id="asiento15"
+                style="position: absolute; top: 67%; left: 186px"
+                type="checkbox"
+                value="15"
+              />
+
+              <input
+                id="asiento16"
+                style="position: absolute; top: 25%; left: 206px"
+                type="checkbox"
+                value="16"
+              />
+              <input
+                id="asiento17"
+                style="position: absolute; top: 34%; left: 206px"
+                type="checkbox"
+                value="17"
+              />
+              <input
+                id="asiento18"
+                style="position: absolute; top: 58%; left: 206px"
+                type="checkbox"
+                value="18"
+              />
+              <input
+                id="asiento19"
+                style="position: absolute; top: 67%; left: 206px"
+                type="checkbox"
+                value="19"
+              />
+
+              <input
+                id="asiento20"
+                style="position: absolute; top: 25%; left: 250px"
+                type="checkbox"
+                value="20"
+              />
+              <input
+                id="asiento21"
+                style="position: absolute; top: 34%; left: 250px"
+                type="checkbox"
+                value="21"
+              />
+              <input
+                id="asiento22"
+                style="position: absolute; top: 58%; left: 250px"
+                type="checkbox"
+                value="22"
+              />
+              <input
+                id="asiento23"
+                style="position: absolute; top: 67%; left: 250px"
+                type="checkbox"
+                value="23"
+              />
+
+              <input
+                id="asiento24"
+                style="position: absolute; top: 25%; left: 270px"
+                type="checkbox"
+                value="24"
+              />
+              <input
+                id="asiento25"
+                style="position: absolute; top: 34%; left: 270px"
+                type="checkbox"
+                value="25"
+              />
+              <input
+                id="asiento26"
+                style="position: absolute; top: 58%; left: 270px"
+                type="checkbox"
+                value="26"
+              />
+              <input
+                id="asiento27"
+                style="position: absolute; top: 67%; left: 270px"
+                type="checkbox"
+                value="27"
+              />
+
+              <input
+                id="asiento28"
+                style="position: absolute; top: 25%; left: 315px"
+                type="checkbox"
+                value="28"
+              />
+              <input
+                id="asiento29"
+                style="position: absolute; top: 34%; left: 315px"
+                type="checkbox"
+                value="29"
+              />
+              <input
+                id="asiento30"
+                style="position: absolute; top: 58%; left: 315px"
+                type="checkbox"
+                value="30"
+              />
+              <input
+                id="asiento31"
+                style="position: absolute; top: 67%; left: 315px"
+                type="checkbox"
+                value="31"
+              />
+            </form>
+
+            <!-- Haremos un formulario al lado de la imagen para reservar los sitios en el barco -->
+          </div>
+        </div>
+      </div>
       
     </main>
     
