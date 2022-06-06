@@ -168,6 +168,15 @@
                     <div class="form-label">
                         <input type="text" name="apellido" class="form-control" placeholder="Apellido">
                     </div>
+                    <div class="form-label">
+                      <input type="email" name="correo" class="form-control" placeholder="Gmail">
+                    </div>
+                    <div class="form-label">
+                      <input type="tel" name="telefono" class="form-control" placeholder="Telefono">
+                    </div>
+                    <div class="form-label">
+                      <input type="date" name="fecha" class="form-control" placeholder="Fecha de reserva">
+                    </div>
                     <input type="submit" class="btn btn-primary">
                 </form>
             </div>
@@ -175,60 +184,9 @@
         </div>
 
       </section>
-      
       <div class="col">
         <div class="card shadow-sm">
-         
-          <div class="formulario_reyenar">
-            <form>
-              <div class="form-group">
-                <!-- <label for="exampleFormControlInput1">Nombre</label> -->
-                <input
-                  type="text"
-                  class="form-control"
-                  id="nombre"
-                  placeholder="Nombre"
-                />
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleFormControlInput1">Apellido</label> -->
-                <input
-                  type="text"
-                  class="form-control"
-                  id="apellidos"
-                  placeholder="Apellido"
-                />
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleFormControlInput1">Correo</label> -->
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Correo"
-                />
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleFormControlInput1">Telefono</label> -->
-                <input
-                  type="text"
-                  class="form-control"
-                  id="telefono"
-                  placeholder="Telefono"
-                />
-              </div>
-              <div class="form-group">
-                <!-- <label for="exampleFormControlTextarea1">Comentarios</label> -->
-                <input
-                  type="date"
-                  class="form-control"
-                  id="fecha"
-                  placeholder="Fecha"
-                ></input>
-              </div>
-              <button type="button" class="btn btn-primary" onclick="reservar()">Reservar</button>
-            
-          </div>
+          <h3 align="center" class="card-title">Indica los asientos que quieres reservar</h3>
           <div id="barcaESCALA" style="position: relative" class="card-body">
             <img src="/barca_mapa.gif" />
             
