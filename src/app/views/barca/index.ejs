@@ -32,6 +32,34 @@
         position: absolute;
         width: 100%;
       }
+
+      #slider {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 800px;
+        border:0px solid #333;
+        
+        margin: 0 auto;
+        padding: 0;
+        top: 0;
+        left: 0;
+        z-index: -2;
+      }
+
+      #slider > div {
+        width: 100%;
+        height: 100%;
+      }
+
+      #slider img {
+        width:100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+        border:0;
+      }
+
     </style>
 
     <!-- JavaScript Bundle with Popper -->
@@ -107,13 +135,16 @@
       </div>
     </header>
 
-    <main class="main">
+    <main class="main" style="position: relative;">
       <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="row-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Reserva ya tu próximo viaje</h1>
+        <div class="row py-lg-5" style="border: 0.5px solid grey;
+        border-radius: 7px;
+        background-color: #000000b3;
+        backdrop-filter: blur(7px);">
+          <div class="row-lg-6 col-md-8 mx-auto" style="padding: 5%;">
+            <h1 class="fw-light text-white">Reserva ya tu próximo viaje</h1>
             <p class="lead text-muted" style="font-weight: 800;">VEN Y DESCUBRE CON TUS PROPIOS OJOS</p>
-            <p class="lead text-muted">Una nueva forma de viajar.<br>Las pequeñas excursiones en barca, de una hora o dos, son<br>estimulantes y especialmente apetecibles con buen tiempo. Estarás pensando<br>en una barca navegando en alta mar, pero los<br>viajes turísticos en barca dan para mucho más: puedes hacer travesías<br>cerca de la costa, por un río, por un canal, en un lago… hasta remando<br>tú mismo. No te pierdas esta lista, porque todos<br>estos viajes en barca os encantarán a vosotros y a vuestros hijos.</p>
+            <p style="color: rgb(237, 237, 237) !important;" class="lead text-muted">Una nueva forma de viajar.<br>Las pequeñas excursiones en barca, de una hora o dos, son<br>estimulantes y especialmente apetecibles con buen tiempo. Estarás pensando<br>en una barca navegando en alta mar, pero los<br>viajes turísticos en barca dan para mucho más: puedes hacer travesías<br>cerca de la costa, por un río, por un canal, en un lago… hasta remando<br>tú mismo. No te pierdas esta lista, porque todos<br>estos viajes en barca os encantarán a vosotros y a vuestros hijos.</p>
             <p>
               <a href="/barca" id="btnReserva" class="btn btn-primary my-2"
                 >RESERVA</a
@@ -123,7 +154,23 @@
           
         </div>
 
+        <div id="slider">
+          <div>
+            <img src="/barca-slider1.jpg"/>
+          </div>
+
+          <div>
+            <img src="/barca-slider2.jpg"/>
+          </div>
+
+          <div>
+            <img src="/barca-slider3.jpg"/>
+          </div>
+          
+        </div>
+
       </section>
+      <br><br><br><br><br><br><br><br><br>
       <div class="col">
         <div class="card shadow-sm">
           <svg
@@ -253,6 +300,15 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script type="text/javascript">//<![CDATA[
+      $(function(){
+          $('#slider div:gt(0)').hide();
+          setInterval(function(){
+            $('#slider div:first-child').fadeOut(0)
+               .next('div').fadeIn(1000)
+               .end().appendTo('#slider');}, 4000);
+      });
+      //]]></script>
     
 </body>
 </html>
