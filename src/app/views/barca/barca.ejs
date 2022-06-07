@@ -141,20 +141,26 @@
                     background-color: #282828;
                     color: white;">
                       <tr>
-                        <th colspan="3">RESERVAS ACTIVAS</th>
+                        <th colspan="6">RESERVAS ACTIVAS</th>
                       </tr>
                       <tr>
-                        <th>ID</th>
                         <th>NOMBRE</th>
                         <th>APELLIDOS</th>
+                        <th>GMAIL</th>
+                        <th>TELEFONO</th>
+                        <th>FECHA</th>
+                        <th>RUTA</th>
                       </tr>
                     </thead>
                     <tbody>
                       <% for(var i = 0; i < news.length; i++) { %>
                         <tr>
-                            <td><%= news[i].id_reserva %></td>
                             <td><%= news[i].nombreUsuario %></td>
                             <td><%= news[i].apellidoUsuario %></td>
+                            <td><%= news[i].correoUsuario %></td>
+                            <td><%= news[i].telefono %></td>
+                            <td><%= news[i].fechaReserva.getDay() %>-<%= news[i].fechaReserva.getMonth() %>-<%= news[i].fechaReserva.getFullYear() %></td>
+                            <td><%= news[i].RUTA %></td>
                         </tr>
                       <% } %>
                     </tbody>
@@ -166,22 +172,27 @@
                 <form action="/barca2" method="post" class="card-body">
                     <h3 class="card-title">Añade una reserva</h3>
                     <div class="form-label">
-                        <input id="nom" type="text" name="nombre" class="form-control" placeholder="Nombre">
+                      <input id="nom" type="text" name="nombre" class="form-control" placeholder="Nombre">
                     </div>
                     <div class="form-label">
-                        <input type="text" name="apellido" class="form-control" placeholder="Apellido">
+                      <input id="apellido" type="text" name="apellido" class="form-control" placeholder="Apellido">
                     </div>
                     <div class="form-label">
-                      <input type="email" name="correo" class="form-control" placeholder="Gmail">
+                      <input id="email" type="email" name="correo" class="form-control" placeholder="Gmail">
                     </div>
                     <div class="form-label">
-                      <input type="tel" name="telefono" class="form-control" placeholder="Telefono">
+                      <input id="telefono" type="tel" name="telefono" class="form-control" placeholder="Telefono">
                     </div>
                     <div class="form-label">
-                      <input type="text" name="ruta" class="form-control" placeholder="Ruta">
+                      <select placeholder="Ruta" name="ruta" id="ruta"class="form-control">
+                        <option disabled selected>Selecciona una ruta</option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                      </select>
                     </div>
                     <div class="form-label">
-                      <input type="date" name="fecha" class="form-control" placeholder="Fecha de reserva">
+                      <input id="fecha" type="date" name="fecha" class="form-control" placeholder="Fecha de reserva">
                     </div>
                     <input type="submit" value="Enviar" class="btn btn-primary">
                 </form>
