@@ -182,7 +182,7 @@
             email = cancelar.correo.value;
             re=/^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
-            if (cancelar.correo.value === '' && cancelar.nombre.value === '' && cancelar.apellido.value === '' && cancelar.ruta.value === '' && cancelar.telefono.value === '' && cancelar.fecha.value === ''){
+            if (cancelar.correo.value === '' && cancelar.nombre.value === '' && cancelar.apellido.value === '' && cancelar.ruta.value === 'Selecciona una ruta' && cancelar.telefono.value === '' && cancelar.fecha.value === ''){
                 Swal.fire('Todos los campos estan vacios')
                 return false;
             }
