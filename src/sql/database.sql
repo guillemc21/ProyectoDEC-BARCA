@@ -20,9 +20,10 @@ nombreUsuario VARCHAR (25),
 apellidoUsuario VARCHAR (20),
 correoUsuario VARCHAR (50),
 telefono INT,
-fechaReserva TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-fecha DATE,
-asiento INT
+fechaReserva DATE,
+RUTA VARCHAR (50),
+asiento INT,
+fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 DESCRIBE reservas;
@@ -31,7 +32,6 @@ INSERT INTO usuarios VALUES
 (1,"Guille","gmendo","Mendoza","2001-05-07","gmendo@gmail.com","P@ssw0rd"),
 (2,"Pau","pmotos","Motos","2001-02-01","pmotos@gmail.com","P@ssw0rd");
 
-INSERT INTO reservas(nombreUsuario,apellidoUsuario) VALUES
-('Guille','Mendoza Castro');
 
-SELECT * FROM reservas;
+
+

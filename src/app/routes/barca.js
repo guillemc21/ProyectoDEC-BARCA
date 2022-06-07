@@ -23,10 +23,14 @@ module.exports = app => {
     });
 
     app.post('/barca2', (req, res) => {
-        const { nombre , apellido } = req.body;
+        const { nombre , apellido , correo , telefono , fecha , ruta} = req.body;
         connection.query('INSERT INTO reservas SET?', {
             nombreUsuario: nombre,
-            apellidoUsuario: apellido
+            apellidoUsuario: apellido,
+            correoUsuario: correo,
+            telefono: telefono,
+            fechaReserva: fecha,
+            RUTA: ruta
         }, (err, result) => {
             res.redirect('/barca')
         });
