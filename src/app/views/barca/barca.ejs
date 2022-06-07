@@ -159,7 +159,7 @@
                             <td><%= news[i].apellidoUsuario %></td>
                             <td><%= news[i].correoUsuario %></td>
                             <td><%= news[i].telefono %></td>
-                            <td><%= news[i].fechaReserva.getDay() %>-<%= news[i].fechaReserva.getMonth() %>-<%= news[i].fechaReserva.getFullYear() %></td>
+                            <td><%= news[i].fechaReserva.getDate() %>-<%= news[i].fechaReserva.getMonth()+1 %>-<%= news[i].fechaReserva.getFullYear() %></td>
                             <td><%= news[i].RUTA %></td>
                         </tr>
                       <% } %>
@@ -186,9 +186,9 @@
                     <div class="form-label">
                       <select placeholder="Ruta" name="ruta" id="ruta"class="form-control">
                         <option disabled selected>Selecciona una ruta</option>
-                        <option value="01">1</option>
-                        <option value="02">2</option>
-                        <option value="03">3</option>
+                        <option value="Alcudia">Alcudia</option>
+                        <option value="Palma">Palma</option>
+                        <option value="Ciutadella">Ciutadella</option>
                       </select>
                     </div>
                     <div class="form-label">
@@ -208,18 +208,21 @@
             <img src="/barca_mapa.gif" />
             
               <input
+                name="asiento1"
                 id="asiento1"
                 style="position: absolute; top: 42%; left: 64px"
                 type="checkbox"
                 value="1"
               />
               <input
+                name="asiento2"
                 id="asiento2"
                 style="position: absolute; top: 53.5%; left: 64px"
                 type="checkbox"
                 value="2"
               />
               <input
+                name="asiento3"
                 id="asiento3"
                 style="position: absolute; top: 66%; left: 64px"
                 type="checkbox"
@@ -227,24 +230,28 @@
               />
 
               <input
+                name="asiento4"
                 id="asiento4"
                 style="position: absolute; top: 25%; left: 121px"
                 type="checkbox"
                 value="4"
               />
               <input
+                name="asiento5"
                 id="asiento5"
                 style="position: absolute; top: 34%; left: 121px"
                 type="checkbox"
                 value="5"
               />
               <input
+                name="asiento6"
                 id="asiento6"
                 style="position: absolute; top: 58%; left: 121px"
                 type="checkbox"
                 value="6"
               />
               <input
+                name="asiento7"
                 id="asiento7"
                 style="position: absolute; top: 67%; left: 121px"
                 type="checkbox"
@@ -252,24 +259,28 @@
               />
 
               <input
+                name="asiento8"
                 id="asiento8"
                 style="position: absolute; top: 25%; left: 141px"
                 type="checkbox"
                 value="8"
               />
               <input
+                name="asiento9"
                 id="asiento9"
                 style="position: absolute; top: 34%; left: 141px"
                 type="checkbox"
                 value="9"
               />
               <input
+                name="asiento10"
                 id="asiento10"
                 style="position: absolute; top: 58%; left: 141px"
                 type="checkbox"
                 value="10"
               />
               <input
+                name="asiento11"
                 id="asiento11"
                 style="position: absolute; top: 67%; left: 141px"
                 type="checkbox"
@@ -277,24 +288,28 @@
               />
 
               <input
+                name="asiento12"
                 id="asiento12"
                 style="position: absolute; top: 25%; left: 186px"
                 type="checkbox"
                 value="12"
               />
               <input
+                name="asiento13"
                 id="asiento13"
                 style="position: absolute; top: 34%; left: 186px"
                 type="checkbox"
                 value="13"
               />
               <input
+                name="asiento14"
                 id="asiento14"
                 style="position: absolute; top: 58%; left: 186px"
                 type="checkbox"
                 value="14"
               />
               <input
+                name="asiento15"
                 id="asiento15"
                 style="position: absolute; top: 67%; left: 186px"
                 type="checkbox"
@@ -302,24 +317,28 @@
               />
 
               <input
+                name="asiento16"
                 id="asiento16"
                 style="position: absolute; top: 25%; left: 206px"
                 type="checkbox"
                 value="16"
               />
               <input
+                name="asiento17"
                 id="asiento17"
                 style="position: absolute; top: 34%; left: 206px"
                 type="checkbox"
                 value="17"
               />
               <input
+                name="asiento18"
                 id="asiento18"
                 style="position: absolute; top: 58%; left: 206px"
                 type="checkbox"
                 value="18"
               />
               <input
+                name="asiento19"
                 id="asiento19"
                 style="position: absolute; top: 67%; left: 206px"
                 type="checkbox"
@@ -327,24 +346,28 @@
               />
 
               <input
+                name="asiento20"
                 id="asiento20"
                 style="position: absolute; top: 25%; left: 250px"
                 type="checkbox"
                 value="20"
               />
               <input
+                name="asiento21"
                 id="asiento21"
                 style="position: absolute; top: 34%; left: 250px"
                 type="checkbox"
                 value="21"
               />
               <input
+                name="asiento22"
                 id="asiento22"
                 style="position: absolute; top: 58%; left: 250px"
                 type="checkbox"
                 value="22"
               />
               <input
+                name="asiento23"
                 id="asiento23"
                 style="position: absolute; top: 67%; left: 250px"
                 type="checkbox"
@@ -352,24 +375,28 @@
               />
 
               <input
+                name="asiento24"
                 id="asiento24"
                 style="position: absolute; top: 25%; left: 270px"
                 type="checkbox"
                 value="24"
               />
               <input
+                name="asiento25"
                 id="asiento25"
                 style="position: absolute; top: 34%; left: 270px"
                 type="checkbox"
                 value="25"
               />
               <input
+                name="asiento26"
                 id="asiento26"
                 style="position: absolute; top: 58%; left: 270px"
                 type="checkbox"
                 value="26"
               />
               <input
+                name="asiento27"
                 id="asiento27"
                 style="position: absolute; top: 67%; left: 270px"
                 type="checkbox"
@@ -377,30 +404,33 @@
               />
 
               <input
+                name="asiento28"
                 id="asiento28"
                 style="position: absolute; top: 25%; left: 315px"
                 type="checkbox"
                 value="28"
               />
               <input
+                name="asiento29"
                 id="asiento29"
                 style="position: absolute; top: 34%; left: 315px"
                 type="checkbox"
                 value="29"
               />
               <input
+                name="asiento30"
                 id="asiento30"
                 style="position: absolute; top: 58%; left: 315px"
                 type="checkbox"
                 value="30"
               />
               <input
+                name="asiento31"
                 id="asiento31"
                 style="position: absolute; top: 67%; left: 315px"
                 type="checkbox"
                 value="31"
               />
-            </form>
 
             <!-- Haremos un formulario al lado de la imagen para reservar los sitios en el barco -->
           </div>
