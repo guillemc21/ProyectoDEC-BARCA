@@ -27,7 +27,7 @@
         position: relative;
       }
 
-      footer{
+      footer {
         bottom: 0;
         position: absolute;
         width: 100%;
@@ -38,7 +38,7 @@
         background-color: green;
       }
 
-      #barcaESCALA{
+      #barcaESCALA {
         /* background-color: red; */
         width: 607px;
         margin: 0 auto;
@@ -71,7 +71,11 @@
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">Información</h4>
               <p class="text-muted">
-                Adentrado a una experiencia por el río llobregat para ver las maravillosas vistas con la mejor compañía posible. Te enseñaremos los rincones más escondidos para que puedas disfutar al máximo. Compra tu entrada y disfruta de esta maravillosa experiencia
+                Adentrado a una experiencia por el río llobregat para ver las
+                maravillosas vistas con la mejor compañía posible. Te
+                enseñaremos los rincones más escondidos para que puedas disfutar
+                al máximo. Compra tu entrada y disfruta de esta maravillosa
+                experiencia
               </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
@@ -83,15 +87,26 @@
               </ul>
 
               <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                  id="btnGroupDrop1"
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Atención al cliente
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                  <li><a class="dropdown-item" href="/cancel">Cancelar reserva</a></li>
-                  <li><a class="dropdown-item" href="/covid">Documentación COVID-19</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/cancel">Cancelar reserva</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/covid"
+                      >Documentación COVID-19</a
+                    >
+                  </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
@@ -100,17 +115,45 @@
         <div class="container">
           <a href="/" class="navbar-brand d-flex align-items-center">
             <svg width="60" height="50">
-                <path class="path" stroke="black" stroke-width="3" stroke-dasharray="570.200" stroke-dashoffset="570.200" fill="none" d="M40 10 L20 45 L60 45 Z">
-                <animate attributeType="XML" attributeName="stroke-dashoffset" to="0" dur="4s" fill="freeze" />
-                </path>
+              <path
+                class="path"
+                stroke="black"
+                stroke-width="3"
+                stroke-dasharray="570.200"
+                stroke-dashoffset="570.200"
+                fill="none"
+                d="M40 10 L20 45 L60 45 Z"
+              >
+                <animate
+                  attributeType="XML"
+                  attributeName="stroke-dashoffset"
+                  to="0"
+                  dur="4s"
+                  fill="freeze"
+                />
+              </path>
             </svg>
 
             <strong>BarcasGP.</strong>
-            
+
             <svg width="60" height="50">
-                <path class="path" stroke="grey" stroke-width="3" stroke-dasharray="570.200" stroke-dashoffset="570.200" fill="none" d="M20 10 L0 45 L40 45 Z">
-                <animate attributeType="XML" attributeName="stroke-dashoffset" to="0" dur="4s" fill="freeze" />
-                </path>
+              <path
+                class="path"
+                stroke="grey"
+                stroke-width="3"
+                stroke-dasharray="570.200"
+                stroke-dashoffset="570.200"
+                fill="none"
+                d="M20 10 L0 45 L40 45 Z"
+              >
+                <animate
+                  attributeType="XML"
+                  attributeName="stroke-dashoffset"
+                  to="0"
+                  dur="4s"
+                  fill="freeze"
+                />
+              </path>
             </svg>
           </a>
           <button
@@ -124,18 +167,22 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          
         </div>
       </div>
     </header>
 
     <main class="main">
       <section class="py-5 text-center container">
-      
-
         <div class="row">
-            <div class="col-md-6 mt-4 text-center" style="max-height: 385px; overflow-y: scroll; padding-right: 0 !important;">
-                <table class="table table-striped">
+          <!-- <div
+            class="col-md-6 mt-4 text-center"
+            style="
+              max-height: 385px;
+              overflow-y: scroll;
+              padding-right: 0 !important;
+            "
+          > -->
+            <!-- <table class="table table-striped">
                     <thead style="position: sticky;
                     top: 0;
                     background-color: #282828;
@@ -165,299 +212,340 @@
                       <% } %>
                     </tbody>
                     
-                </table>
-            </div>
+                </table> -->
+          </div>
 
-            <div class="col-md-6 mt-4 card">
-                <form action="/barca2" method="post" class="card-body">
-                    <h3 class="card-title">Añade una reserva</h3>
-                    <div class="form-label">
-                      <input id="nom" type="text" name="nombre" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="form-label">
-                      <input id="apellido" type="text" name="apellido" class="form-control" placeholder="Apellido">
-                    </div>
-                    <div class="form-label">
-                      <input id="email" type="email" name="correo" class="form-control" placeholder="Gmail">
-                    </div>
-                    <div class="form-label">
-                      <input id="telefono" type="tel" name="telefono" class="form-control" placeholder="Telefono">
-                    </div>
-                    <div class="form-label">
-                      <select placeholder="Ruta" name="ruta" id="ruta"class="form-control">
-                        <option disabled selected>Selecciona una ruta</option>
-                        <option value="Alcudia">Alcudia</option>
-                        <option value="Palma">Palma</option>
-                        <option value="Ciutadella">Ciutadella</option>
-                      </select>
-                    </div>
-                    <div class="form-label">
-                      <input id="fecha" type="date" name="fecha" class="form-control" placeholder="Fecha de reserva">
-                    </div>
-                    <input type="submit" value="Enviar" class="btn btn-primary">
-                </form>
-            </div>
-
+          <div class="col-md-6 mt-4 card" style="margin: 0 auto; text-align:center;">
+            <form action="/barca2" method="post" class="card-body">
+              <h3 class="card-title">Añade una reserva</h3>
+              <div class="form-label">
+                <input
+                  id="nom"
+                  type="text"
+                  name="nombre"
+                  class="form-control"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="form-label">
+                <input
+                  id="apellido"
+                  type="text"
+                  name="apellido"
+                  class="form-control"
+                  placeholder="Apellido"
+                />
+              </div>
+              <div class="form-label">
+                <input
+                  id="email"
+                  type="email"
+                  name="correo"
+                  class="form-control"
+                  placeholder="Gmail"
+                />
+              </div>
+              <div class="form-label">
+                <input
+                  id="telefono"
+                  type="tel"
+                  name="telefono"
+                  class="form-control"
+                  placeholder="Telefono"
+                />
+              </div>
+              <div class="form-label">
+                <select
+                  placeholder="Ruta"
+                  name="ruta"
+                  id="ruta"
+                  class="form-control"
+                >
+                  <option disabled selected>Selecciona una ruta</option>
+                  <option value="Alcudia">Alcudia</option>
+                  <option value="Palma">Palma</option>
+                  <option value="Ciutadella">Ciutadella</option>
+                </select>
+              </div>
+              <div class="form-label">
+                <input
+                  id="fecha"
+                  type="date"
+                  name="fecha"
+                  class="form-control"
+                  placeholder="Fecha de reserva"
+                />
+              </div>
+              <input type="submit" value="Enviar" class="btn btn-primary" />
+            </form>
+          </div>
         </div>
-
       </section>
       <div class="col">
         <div class="card shadow-sm">
-          <h3 align="center" class="card-title">Indica los asientos que quieres reservar</h3>
+          <h3 align="center" class="card-title" style="margin-top: 40px;">
+            Indica los asientos que quieres reservar
+          </h3>
           <div id="barcaESCALA" style="position: relative" class="card-body">
             <img src="/barca_mapa.gif" />
-            
-              <input
-                name="asiento1"
-                id="asiento1"
-                style="position: absolute; top: 42%; left: 64px"
-                type="checkbox"
-                value="1"
-              />
-              <input
-                name="asiento2"
-                id="asiento2"
-                style="position: absolute; top: 53.5%; left: 64px"
-                type="checkbox"
-                value="2"
-              />
-              <input
-                name="asiento3"
-                id="asiento3"
-                style="position: absolute; top: 66%; left: 64px"
-                type="checkbox"
-                value="3"
-              />
 
-              <input
-                name="asiento4"
-                id="asiento4"
-                style="position: absolute; top: 25%; left: 121px"
-                type="checkbox"
-                value="4"
-              />
-              <input
-                name="asiento5"
-                id="asiento5"
-                style="position: absolute; top: 34%; left: 121px"
-                type="checkbox"
-                value="5"
-              />
-              <input
-                name="asiento6"
-                id="asiento6"
-                style="position: absolute; top: 58%; left: 121px"
-                type="checkbox"
-                value="6"
-              />
-              <input
-                name="asiento7"
-                id="asiento7"
-                style="position: absolute; top: 67%; left: 121px"
-                type="checkbox"
-                value="7"
-              />
+            <input
+              name="asiento1"
+              id="asiento1"
+              style="position: absolute; top: 42%; left: 64px"
+              type="checkbox"
+              value="1"
+            />
+            <input
+              name="asiento2"
+              id="asiento2"
+              style="position: absolute; top: 53.5%; left: 64px"
+              type="checkbox"
+              value="2"
+            />
+            <input
+              name="asiento3"
+              id="asiento3"
+              style="position: absolute; top: 66%; left: 64px"
+              type="checkbox"
+              value="3"
+            />
 
-              <input
-                name="asiento8"
-                id="asiento8"
-                style="position: absolute; top: 25%; left: 141px"
-                type="checkbox"
-                value="8"
-              />
-              <input
-                name="asiento9"
-                id="asiento9"
-                style="position: absolute; top: 34%; left: 141px"
-                type="checkbox"
-                value="9"
-              />
-              <input
-                name="asiento10"
-                id="asiento10"
-                style="position: absolute; top: 58%; left: 141px"
-                type="checkbox"
-                value="10"
-              />
-              <input
-                name="asiento11"
-                id="asiento11"
-                style="position: absolute; top: 67%; left: 141px"
-                type="checkbox"
-                value="11"
-              />
+            <input
+              name="asiento4"
+              id="asiento4"
+              style="position: absolute; top: 25%; left: 121px"
+              type="checkbox"
+              value="4"
+            />
+            <input
+              name="asiento5"
+              id="asiento5"
+              style="position: absolute; top: 34%; left: 121px"
+              type="checkbox"
+              value="5"
+            />
+            <input
+              name="asiento6"
+              id="asiento6"
+              style="position: absolute; top: 58%; left: 121px"
+              type="checkbox"
+              value="6"
+            />
+            <input
+              name="asiento7"
+              id="asiento7"
+              style="position: absolute; top: 67%; left: 121px"
+              type="checkbox"
+              value="7"
+            />
 
-              <input
-                name="asiento12"
-                id="asiento12"
-                style="position: absolute; top: 25%; left: 186px"
-                type="checkbox"
-                value="12"
-              />
-              <input
-                name="asiento13"
-                id="asiento13"
-                style="position: absolute; top: 34%; left: 186px"
-                type="checkbox"
-                value="13"
-              />
-              <input
-                name="asiento14"
-                id="asiento14"
-                style="position: absolute; top: 58%; left: 186px"
-                type="checkbox"
-                value="14"
-              />
-              <input
-                name="asiento15"
-                id="asiento15"
-                style="position: absolute; top: 67%; left: 186px"
-                type="checkbox"
-                value="15"
-              />
+            <input
+              name="asiento8"
+              id="asiento8"
+              style="position: absolute; top: 25%; left: 141px"
+              type="checkbox"
+              value="8"
+            />
+            <input
+              name="asiento9"
+              id="asiento9"
+              style="position: absolute; top: 34%; left: 141px"
+              type="checkbox"
+              value="9"
+            />
+            <input
+              name="asiento10"
+              id="asiento10"
+              style="position: absolute; top: 58%; left: 141px"
+              type="checkbox"
+              value="10"
+            />
+            <input
+              name="asiento11"
+              id="asiento11"
+              style="position: absolute; top: 67%; left: 141px"
+              type="checkbox"
+              value="11"
+            />
 
-              <input
-                name="asiento16"
-                id="asiento16"
-                style="position: absolute; top: 25%; left: 206px"
-                type="checkbox"
-                value="16"
-              />
-              <input
-                name="asiento17"
-                id="asiento17"
-                style="position: absolute; top: 34%; left: 206px"
-                type="checkbox"
-                value="17"
-              />
-              <input
-                name="asiento18"
-                id="asiento18"
-                style="position: absolute; top: 58%; left: 206px"
-                type="checkbox"
-                value="18"
-              />
-              <input
-                name="asiento19"
-                id="asiento19"
-                style="position: absolute; top: 67%; left: 206px"
-                type="checkbox"
-                value="19"
-              />
+            <input
+              name="asiento12"
+              id="asiento12"
+              style="position: absolute; top: 25%; left: 186px"
+              type="checkbox"
+              value="12"
+            />
+            <input
+              name="asiento13"
+              id="asiento13"
+              style="position: absolute; top: 34%; left: 186px"
+              type="checkbox"
+              value="13"
+            />
+            <input
+              name="asiento14"
+              id="asiento14"
+              style="position: absolute; top: 58%; left: 186px"
+              type="checkbox"
+              value="14"
+            />
+            <input
+              name="asiento15"
+              id="asiento15"
+              style="position: absolute; top: 67%; left: 186px"
+              type="checkbox"
+              value="15"
+            />
 
-              <input
-                name="asiento20"
-                id="asiento20"
-                style="position: absolute; top: 25%; left: 250px"
-                type="checkbox"
-                value="20"
-              />
-              <input
-                name="asiento21"
-                id="asiento21"
-                style="position: absolute; top: 34%; left: 250px"
-                type="checkbox"
-                value="21"
-              />
-              <input
-                name="asiento22"
-                id="asiento22"
-                style="position: absolute; top: 58%; left: 250px"
-                type="checkbox"
-                value="22"
-              />
-              <input
-                name="asiento23"
-                id="asiento23"
-                style="position: absolute; top: 67%; left: 250px"
-                type="checkbox"
-                value="23"
-              />
+            <input
+              name="asiento16"
+              id="asiento16"
+              style="position: absolute; top: 25%; left: 206px"
+              type="checkbox"
+              value="16"
+            />
+            <input
+              name="asiento17"
+              id="asiento17"
+              style="position: absolute; top: 34%; left: 206px"
+              type="checkbox"
+              value="17"
+            />
+            <input
+              name="asiento18"
+              id="asiento18"
+              style="position: absolute; top: 58%; left: 206px"
+              type="checkbox"
+              value="18"
+            />
+            <input
+              name="asiento19"
+              id="asiento19"
+              style="position: absolute; top: 67%; left: 206px"
+              type="checkbox"
+              value="19"
+            />
 
-              <input
-                name="asiento24"
-                id="asiento24"
-                style="position: absolute; top: 25%; left: 270px"
-                type="checkbox"
-                value="24"
-              />
-              <input
-                name="asiento25"
-                id="asiento25"
-                style="position: absolute; top: 34%; left: 270px"
-                type="checkbox"
-                value="25"
-              />
-              <input
-                name="asiento26"
-                id="asiento26"
-                style="position: absolute; top: 58%; left: 270px"
-                type="checkbox"
-                value="26"
-              />
-              <input
-                name="asiento27"
-                id="asiento27"
-                style="position: absolute; top: 67%; left: 270px"
-                type="checkbox"
-                value="27"
-              />
+            <input
+              name="asiento20"
+              id="asiento20"
+              style="position: absolute; top: 25%; left: 250px"
+              type="checkbox"
+              value="20"
+            />
+            <input
+              name="asiento21"
+              id="asiento21"
+              style="position: absolute; top: 34%; left: 250px"
+              type="checkbox"
+              value="21"
+            />
+            <input
+              name="asiento22"
+              id="asiento22"
+              style="position: absolute; top: 58%; left: 250px"
+              type="checkbox"
+              value="22"
+            />
+            <input
+              name="asiento23"
+              id="asiento23"
+              style="position: absolute; top: 67%; left: 250px"
+              type="checkbox"
+              value="23"
+            />
 
-              <input
-                name="asiento28"
-                id="asiento28"
-                style="position: absolute; top: 25%; left: 315px"
-                type="checkbox"
-                value="28"
-              />
-              <input
-                name="asiento29"
-                id="asiento29"
-                style="position: absolute; top: 34%; left: 315px"
-                type="checkbox"
-                value="29"
-              />
-              <input
-                name="asiento30"
-                id="asiento30"
-                style="position: absolute; top: 58%; left: 315px"
-                type="checkbox"
-                value="30"
-              />
-              <input
-                name="asiento31"
-                id="asiento31"
-                style="position: absolute; top: 67%; left: 315px"
-                type="checkbox"
-                value="31"
-              />
+            <input
+              name="asiento24"
+              id="asiento24"
+              style="position: absolute; top: 25%; left: 270px"
+              type="checkbox"
+              value="24"
+            />
+            <input
+              name="asiento25"
+              id="asiento25"
+              style="position: absolute; top: 34%; left: 270px"
+              type="checkbox"
+              value="25"
+            />
+            <input
+              name="asiento26"
+              id="asiento26"
+              style="position: absolute; top: 58%; left: 270px"
+              type="checkbox"
+              value="26"
+            />
+            <input
+              name="asiento27"
+              id="asiento27"
+              style="position: absolute; top: 67%; left: 270px"
+              type="checkbox"
+              value="27"
+            />
+
+            <input
+              name="asiento28"
+              id="asiento28"
+              style="position: absolute; top: 25%; left: 315px"
+              type="checkbox"
+              value="28"
+            />
+            <input
+              name="asiento29"
+              id="asiento29"
+              style="position: absolute; top: 34%; left: 315px"
+              type="checkbox"
+              value="29"
+            />
+            <input
+              name="asiento30"
+              id="asiento30"
+              style="position: absolute; top: 58%; left: 315px"
+              type="checkbox"
+              value="30"
+            />
+            <input
+              name="asiento31"
+              id="asiento31"
+              style="position: absolute; top: 67%; left: 315px"
+              type="checkbox"
+              value="31"
+            />
 
             <!-- Haremos un formulario al lado de la imagen para reservar los sitios en el barco -->
           </div>
         </div>
       </div>
-      
     </main>
-    
-    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <footer class="text-muted py-5">
       <div class="container">
         <p class="float-end mb-1">
           <a href="/barca">Volver arriba</a>
         </p>
         <p class="mb-1">
-          Empresa liderada por &copy; Guille Mendoza Castro y &copy; Pau Motos Piquer. 2022 &copy; BarcasGP. | DAW2 - DEC 
+          Empresa liderada por &copy; Guille Mendoza Castro y &copy; Pau Motos
+          Piquer. 2022 &copy; BarcasGP. | DAW2 - DEC
         </p>
         <p class="mb-0">
-          No sabes a que nos dedicamos? <a href="https://github.com/Byguillemc21/ProyectoDEC-BARCA">Visita nuestros Githubs</a> o heche un vistazo a la
-          <a href="https://smxdaw.insdanielblanxart.cat/">pagina de nuestro instituto</a>.
+          No sabes a que nos dedicamos?
+          <a href="https://github.com/Byguillemc21/ProyectoDEC-BARCA"
+            >Visita nuestros Githubs</a
+          >
+          o heche un vistazo a la
+          <a href="https://smxdaw.insdanielblanxart.cat/"
+            >pagina de nuestro instituto</a
+          >.
         </p>
       </div>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script>
-        document.getElementById('nom').focus();
+      document.getElementById("nom").focus();
     </script>
-</body>
+  </body>
 </html>
