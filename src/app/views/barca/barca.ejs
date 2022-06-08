@@ -174,46 +174,45 @@
     <main class="main">
       <section class="py-5 text-center container">
         <div class="row">
-          <!-- <div
+          <div
             class="col-md-6 mt-4 text-center"
             style="
               max-height: 385px;
               overflow-y: scroll;
               padding-right: 0 !important;
             "
-          > -->
-            <!-- <table class="table table-striped">
-                    <thead style="position: sticky;
-                    top: 0;
-                    background-color: #282828;
-                    color: white;">
-                      <tr>
-                        <th colspan="6">RESERVAS ACTIVAS</th>
-                      </tr>
-                      <tr>
-                        <th>NOMBRE</th>
-                        <th>APELLIDOS</th>
-                        <th>GMAIL</th>
-                        <th>TELEFONO</th>
-                        <th>FECHA</th>
-                        <th>RUTA</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <% for(var i = 0; i < news.length; i++) { %>
-                        <tr>
-                            <td><%= news[i].nombreUsuario %></td>
-                            <td><%= news[i].apellidoUsuario %></td>
-                            <td><%= news[i].correoUsuario %></td>
-                            <td><%= news[i].telefono %></td>
-                            <td><%= news[i].fechaReserva.getDate() %>-<%= news[i].fechaReserva.getMonth()+1 %>-<%= news[i].fechaReserva.getFullYear() %></td>
-                            <td><%= news[i].RUTA %></td>
-                        </tr>
-                      <% } %>
-                    </tbody>
-                    
-                </table> 
-          </div> -->
+          >
+            <table class="table table-striped">
+              <thead style="position: sticky;
+              top: 0;
+              background-color: #282828;
+              color: white;">
+                <tr>
+                  <th colspan="6">RESERVAS ACTIVAS</th>
+                </tr>
+                <tr>
+                  <th>NOMBRE</th>
+                  <th>APELLIDOS</th>
+                  <th>GMAIL</th>
+                  <th>TELEFONO</th>
+                  <th>FECHA</th>
+                  <th>RUTA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% for(var i = 0; i < news.length; i++) { %>
+                  <tr>
+                      <td><%= news[i].nombreUsuario %></td>
+                      <td><%= news[i].apellidoUsuario %></td>
+                      <td><%= news[i].correoUsuario %></td>
+                      <td><%= news[i].telefono %></td>
+                      <td><%= news[i].fechaReserva.getDate() %>-<%= news[i].fechaReserva.getMonth()+1 %>-<%= news[i].fechaReserva.getFullYear() %></td>
+                      <td><%= news[i].RUTA %></td>
+                  </tr>
+                <% } %>
+              </tbody>      
+            </table> 
+          </div>
 
           <div class="col-md-6 mt-4 card" style="margin: 0 auto; text-align:center;">
             <form action="/barca2" method="post" class="card-body">

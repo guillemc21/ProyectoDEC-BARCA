@@ -1,3 +1,4 @@
+const res = require("express/lib/response");
 const dbConnection = require("../../config/dbConnection");
 /* 
 --> redirect(poner ruta que coincida con alguna indicada con el app.get(...))
@@ -36,6 +37,20 @@ module.exports = (app) => {
       }
     );
   });
+
+  app.post("/alcudia2", (req, res) => {
+    /* const alcudia = req.body.choice;
+    connection.query(`SELECT * FROM reservas WHERE RUTA = ${alcudia}`, (err, result) => {
+      console.log(result);
+      
+    }); */
+    console.log(req.body.choise);
+    console.log(req.body.choise);
+
+
+  })
+
+ 
 
   app.get("/covid", (req, res) => {
     res.render("barca/covid");
